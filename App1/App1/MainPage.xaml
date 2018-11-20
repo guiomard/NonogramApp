@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Label x:Name="test" Text="Nonogram" 
+           HorizontalOptions="Center" />
+        <Button x:Name="easyButton"
+           Text="Easy" 
+           HorizontalOptions="Center" 
+           Clicked="OnButtonEasyClicked"/>
+        <Button x:Name="mediumButton"
+           Text="Medium" 
+           HorizontalOptions="Center" 
+           Clicked="OnButtonMediumClicked"/>
+        <Button x:Name="hardButton"
+           Text="Hard" 
+           HorizontalOptions="Center" 
+           Clicked="OnButtonHardClicked"/>
+        <Button x:Name="helpButton"
+           Text="Help" 
+           HorizontalOptions="Center" 
+           Clicked="OnButtonHelpClicked"/>
+    </StackLayout>
+
+</ContentPage>

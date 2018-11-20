@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Easy"
+             BackgroundColor="Gray">
+    <ContentPage.Resources>
+        <Style x:Key="Tile" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+        <Style x:Key="Button" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Black"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style x:Key="Chan" TargetType="Label">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Easy" HorizontalOptions="Center" TextColor="White"/>
+            
+
+            <Grid RowSpacing="1" ColumnSpacing="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Label Style="{StaticResource Chan}" x:Name="hor1" Grid.Row="0" Grid.Column="1"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor2" Grid.Row="0" Grid.Column="2"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor3" Grid.Row="0" Grid.Column="3"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor4" Grid.Row="0" Grid.Column="4"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor5" Grid.Row="0" Grid.Column="5"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver1" Grid.Row="1" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="1" Grid.Row="1" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="2" Grid.Row="1" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="3" Grid.Row="1" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="4" Grid.Row="1" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="5" Grid.Row="1" Grid.Column="5"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver2" Grid.Row="2" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="6" Grid.Row="2" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="7" Grid.Row="2" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="8" Grid.Row="2" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="9" Grid.Row="2" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="10" Grid.Row="2" Grid.Column="5"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver3" Grid.Row="3" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="11" Grid.Row="3" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="12" Grid.Row="3" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="13" Grid.Row="3" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="14" Grid.Row="3" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="15" Grid.Row="3" Grid.Column="5"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver4" Grid.Row="4" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="16" Grid.Row="4" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="17" Grid.Row="4" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="18" Grid.Row="4" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="19" Grid.Row="4" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="20" Grid.Row="4" Grid.Column="5"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver5" Grid.Row="5" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="21" Grid.Row="5" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="22" Grid.Row="5" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="23" Grid.Row="5" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="24" Grid.Row="5" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="25" Grid.Row="5" Grid.Column="5"/>
+            </Grid>
+            <Grid>
+                <Button Style="{StaticResource Button}" x:Name="homeButton" Text="Home" HorizontalOptions="Center" Clicked="OnButtonHomeClicked" Grid.Row="0" Grid.Column="0"/>
+                <Button Style="{StaticResource Button}" x:Name="checkButton" Text="Check" HorizontalOptions="Center" Clicked="checkClicked" Grid.Row="0" Grid.Column="1"/>
+                <Button Style="{StaticResource Button}" x:Name="refreshButton" Text="New Puzzle" HorizontalOptions="Center" Clicked="newClicked" FontSize="10" Grid.Row="0" Grid.Column="2"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
