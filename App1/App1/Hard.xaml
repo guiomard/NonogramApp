@@ -1,15 +1,347 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Hard">
+             x:Class="App1.Hard"
+             BackgroundColor="Gray">
+    <ContentPage.Resources>
+        <Style x:Key="Tile" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="Red"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="BorderColor" Value="White"/>
+        </Style>
+        <Style x:Key="Button" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Black"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style x:Key="Chan" TargetType="Label">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="7"/>
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hard" 
-           HorizontalOptions="Center" />
-            <Button x:Name="homeButton"
-            Text="Home" 
-            HorizontalOptions="Center" 
-            Clicked="OnButtonHomeClicked"/>
+            <Label Text="Hard" HorizontalOptions="Center" TextColor="White"/>
+
+
+            <Grid RowSpacing="1" ColumnSpacing="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Style="{StaticResource Chan}" x:Name="hor1" Grid.Row="0" Grid.Column="1"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor2" Grid.Row="0" Grid.Column="2"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor3" Grid.Row="0" Grid.Column="3"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor4" Grid.Row="0" Grid.Column="4"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor5" Grid.Row="0" Grid.Column="5"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor6" Grid.Row="0" Grid.Column="6"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor7" Grid.Row="0" Grid.Column="7"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor8" Grid.Row="0" Grid.Column="8"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor9" Grid.Row="0" Grid.Column="9"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor10" Grid.Row="0" Grid.Column="10"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor11" Grid.Row="0" Grid.Column="11"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor12" Grid.Row="0" Grid.Column="12"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor13" Grid.Row="0" Grid.Column="13"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor14" Grid.Row="0" Grid.Column="14"/>
+                <Label Style="{StaticResource Chan}" x:Name="hor15" Grid.Row="0" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver1" Grid.Row="1" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="1" Grid.Row="1" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="2" Grid.Row="1" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="3" Grid.Row="1" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="4" Grid.Row="1" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="5" Grid.Row="1" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="6" Grid.Row="1" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="7" Grid.Row="1" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="8" Grid.Row="1" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="9" Grid.Row="1" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="10" Grid.Row="1" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="11" Grid.Row="1" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="12" Grid.Row="1" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="13" Grid.Row="1" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="14" Grid.Row="1" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="15" Grid.Row="1" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver2" Grid.Row="2" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="16" Grid.Row="2" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="17" Grid.Row="2" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="18" Grid.Row="2" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="19" Grid.Row="2" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="20" Grid.Row="2" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="21" Grid.Row="2" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="22" Grid.Row="2" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="23" Grid.Row="2" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="24" Grid.Row="2" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="25" Grid.Row="2" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="26" Grid.Row="2" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="27" Grid.Row="2" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="28" Grid.Row="2" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="29" Grid.Row="2" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="30" Grid.Row="2" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver3" Grid.Row="3" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="31" Grid.Row="3" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="32" Grid.Row="3" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="33" Grid.Row="3" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="34" Grid.Row="3" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="35" Grid.Row="3" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="36" Grid.Row="3" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="37" Grid.Row="3" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="38" Grid.Row="3" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="39" Grid.Row="3" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="40" Grid.Row="3" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="41" Grid.Row="3" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="42" Grid.Row="3" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="43" Grid.Row="3" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="44" Grid.Row="3" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="45" Grid.Row="3" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver4" Grid.Row="4" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="46" Grid.Row="4" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="47" Grid.Row="4" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="48" Grid.Row="4" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="49" Grid.Row="4" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="50" Grid.Row="4" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="51" Grid.Row="4" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="52" Grid.Row="4" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="53" Grid.Row="4" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="54" Grid.Row="4" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="55" Grid.Row="4" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="56" Grid.Row="4" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="57" Grid.Row="4" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="58" Grid.Row="4" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="59" Grid.Row="4" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="60" Grid.Row="4" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver5" Grid.Row="5" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="61" Grid.Row="5" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="62" Grid.Row="5" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="63" Grid.Row="5" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="64" Grid.Row="5" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="65" Grid.Row="5" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="66" Grid.Row="5" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="67" Grid.Row="5" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="68" Grid.Row="5" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="69" Grid.Row="5" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="70" Grid.Row="5" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="71" Grid.Row="5" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="72" Grid.Row="5" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="73" Grid.Row="5" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="74" Grid.Row="5" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="75" Grid.Row="5" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver6" Grid.Row="6" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="76" Grid.Row="6" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="77" Grid.Row="6" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="78" Grid.Row="6" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="79" Grid.Row="6" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="80" Grid.Row="6" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="81" Grid.Row="6" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="82" Grid.Row="6" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="83" Grid.Row="6" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="84" Grid.Row="6" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="85" Grid.Row="6" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="86" Grid.Row="6" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="87" Grid.Row="6" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="88" Grid.Row="6" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="89" Grid.Row="6" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="90" Grid.Row="6" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver7" Grid.Row="7" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="91" Grid.Row="7" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="92" Grid.Row="7" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="93" Grid.Row="7" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="94" Grid.Row="7" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="95" Grid.Row="7" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="96" Grid.Row="7" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="97" Grid.Row="7" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="98" Grid.Row="7" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="99" Grid.Row="7" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="100" Grid.Row="7" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="101" Grid.Row="7" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="102" Grid.Row="7" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="103" Grid.Row="7" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="104" Grid.Row="7" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="105" Grid.Row="7" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver8" Grid.Row="8" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="106" Grid.Row="8" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="107" Grid.Row="8" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="108" Grid.Row="8" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="109" Grid.Row="8" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="110" Grid.Row="8" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="111" Grid.Row="8" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="112" Grid.Row="8" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="113" Grid.Row="8" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="114" Grid.Row="8" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="115" Grid.Row="8" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="116" Grid.Row="8" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="117" Grid.Row="8" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="118" Grid.Row="8" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="119" Grid.Row="8" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="120" Grid.Row="8" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver9" Grid.Row="9" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="121" Grid.Row="9" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="122" Grid.Row="9" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="123" Grid.Row="9" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="124" Grid.Row="9" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="125" Grid.Row="9" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="126" Grid.Row="9" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="127" Grid.Row="9" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="128" Grid.Row="9" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="129" Grid.Row="9" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="130" Grid.Row="9" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="131" Grid.Row="9" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="132" Grid.Row="9" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="133" Grid.Row="9" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="134" Grid.Row="9" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="135" Grid.Row="9" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver10" Grid.Row="10" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="136" Grid.Row="10" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="137" Grid.Row="10" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="138" Grid.Row="10" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="139" Grid.Row="10" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="140" Grid.Row="10" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="141" Grid.Row="10" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="142" Grid.Row="10" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="143" Grid.Row="10" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="144" Grid.Row="10" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="145" Grid.Row="10" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="146" Grid.Row="10" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="147" Grid.Row="10" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="148" Grid.Row="10" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="149" Grid.Row="10" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="150" Grid.Row="10" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver11" Grid.Row="11" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="151" Grid.Row="11" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="152" Grid.Row="11" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="153" Grid.Row="11" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="154" Grid.Row="11" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="155" Grid.Row="11" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="156" Grid.Row="11" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="157" Grid.Row="11" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="158" Grid.Row="11" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="159" Grid.Row="11" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="160" Grid.Row="11" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="161" Grid.Row="11" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="162" Grid.Row="11" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="163" Grid.Row="11" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="164" Grid.Row="11" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="165" Grid.Row="11" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver12" Grid.Row="12" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="166" Grid.Row="12" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="167" Grid.Row="12" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="168" Grid.Row="12" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="169" Grid.Row="12" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="170" Grid.Row="12" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="171" Grid.Row="12" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="172" Grid.Row="12" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="173" Grid.Row="12" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="174" Grid.Row="12" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="175" Grid.Row="12" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="176" Grid.Row="12" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="177" Grid.Row="12" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="178" Grid.Row="12" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="179" Grid.Row="12" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="180" Grid.Row="12" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver13" Grid.Row="13" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="181" Grid.Row="13" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="182" Grid.Row="13" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="183" Grid.Row="13" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="184" Grid.Row="13" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="185" Grid.Row="13" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="186" Grid.Row="13" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="187" Grid.Row="13" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="188" Grid.Row="13" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="189" Grid.Row="13" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="190" Grid.Row="13" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="191" Grid.Row="13" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="192" Grid.Row="13" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="193" Grid.Row="13" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="194" Grid.Row="13" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="195" Grid.Row="13" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver14" Grid.Row="14" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="196" Grid.Row="14" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="197" Grid.Row="14" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="198" Grid.Row="14" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="199" Grid.Row="14" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="200" Grid.Row="14" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="201" Grid.Row="14" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="202" Grid.Row="14" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="203" Grid.Row="14" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="204" Grid.Row="14" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="205" Grid.Row="14" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="206" Grid.Row="14" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="207" Grid.Row="14" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="208" Grid.Row="14" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="209" Grid.Row="14" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="210" Grid.Row="14" Grid.Column="15"/>
+
+                <Label Style="{StaticResource Chan}" x:Name="ver15" Grid.Row="15" Grid.Column="0"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="211" Grid.Row="15" Grid.Column="1"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="212" Grid.Row="15" Grid.Column="2"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="213" Grid.Row="15" Grid.Column="3"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="214" Grid.Row="15" Grid.Column="4"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="215" Grid.Row="15" Grid.Column="5"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="216" Grid.Row="15" Grid.Column="6"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="217" Grid.Row="15" Grid.Column="7"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="218" Grid.Row="15" Grid.Column="8"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="219" Grid.Row="15" Grid.Column="9"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="220" Grid.Row="15" Grid.Column="10"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="221" Grid.Row="15" Grid.Column="11"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="222" Grid.Row="15" Grid.Column="12"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="223" Grid.Row="15" Grid.Column="13"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="224" Grid.Row="15" Grid.Column="14"/>
+                <Button Style="{StaticResource Tile}" Clicked="OnTileClicked" CommandParameter="225" Grid.Row="15" Grid.Column="15"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Button Style="{StaticResource Button}" x:Name="homeButton" Text="Home" HorizontalOptions="Center" Clicked="OnButtonHomeClicked" Grid.Row="0" Grid.Column="0"/>
+                <Button Style="{StaticResource Button}" x:Name="checkButton" Text="Check" HorizontalOptions="Center" Clicked="checkClicked" Grid.Row="0" Grid.Column="1"/>
+                <Button Style="{StaticResource Button}" x:Name="refreshButton" Text="New Puzzle" HorizontalOptions="Center" Clicked="newClicked" FontSize="7" Grid.Row="0" Grid.Column="2"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
