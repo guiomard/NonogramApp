@@ -16,5 +16,9 @@ namespace App1
 		{
 			InitializeComponent ();
 		}
-	}
+        private void OnButtonHomeClicked(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new MainPage());
+        }
+    }
 }

@@ -13,6 +13,8 @@
         <Style x:Key="Button" TargetType="Button">
             <Setter Property="BackgroundColor" Value="Black"/>
             <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="BorderColor" Value="White"/>
         </Style>
         <Style x:Key="Chan" TargetType="Label">
             <Setter Property="BackgroundColor" Value="White"/>

@@ -13,6 +13,7 @@ namespace App1
         {
             InitializeComponent();
         }
+        //Buttons to send user to other pages
         private void OnButtonEasyClicked(object sender, EventArgs args)
         {
             Navigation.PushAsync(new Easy());

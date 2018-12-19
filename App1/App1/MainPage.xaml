@@ -2,27 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App1"
-             x:Class="App1.MainPage">
-
+             x:Class="App1.MainPage"
+             BackgroundColor="Gray">
+    <ContentPage.Resources>
+        <Style x:Key="Button" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Black"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="BorderColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
     <StackLayout>
-        <Label x:Name="test" Text="Nonogram" 
-           HorizontalOptions="Center" />
-        <Button x:Name="easyButton"
-           Text="Easy" 
-           HorizontalOptions="Center" 
-           Clicked="OnButtonEasyClicked"/>
-        <Button x:Name="mediumButton"
-           Text="Medium" 
-           HorizontalOptions="Center" 
-           Clicked="OnButtonMediumClicked"/>
-        <Button x:Name="hardButton"
-           Text="Hard" 
-           HorizontalOptions="Center" 
-           Clicked="OnButtonHardClicked"/>
-        <Button x:Name="helpButton"
-           Text="Help" 
-           HorizontalOptions="Center" 
-           Clicked="OnButtonHelpClicked"/>
+        <Grid RowSpacing="15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="title" Text="Nonograms" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="Large"/>
+            <Button Style="{StaticResource Button}" x:Name="easyButton" Text="Easy" HorizontalOptions="Center" Clicked="OnButtonEasyClicked" Grid.Row="1" Grid.Column="0"/>
+            <Button Style="{StaticResource Button}" x:Name="mediumButton" Text="Medium" HorizontalOptions="Center" Clicked="OnButtonMediumClicked" Grid.Row="2" Grid.Column="0"/>
+            <Button Style="{StaticResource Button}" x:Name="hardButton" Text="Hard" HorizontalOptions="Center" Clicked="OnButtonHardClicked" Grid.Row="3" Grid.Column="0"/>
+            <Button Style="{StaticResource Button}" x:Name="helpButton" Text="Instructions" HorizontalOptions="Center" Clicked="OnButtonHelpClicked" Grid.Row="4" Grid.Column="0"/>
+        </Grid>
     </StackLayout>
 
 </ContentPage>

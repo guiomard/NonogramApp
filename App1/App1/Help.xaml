@@ -1,12 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Help">
+             x:Class="App1.Help"
+             BackgroundColor="Gray">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Instructions"
+                       FontSize="Large"
+                       TextColor="White"                       
+                       HorizontalOptions="CenterAndExpand" 
+                       Grid.Column="0"/>
+                <Button Text="Home"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        BorderColor="White"
+                        Grid.Column="1"
+                        Clicked="OnButtonHomeClicked"/>
+            </Grid>
+            
+            <Label TextColor="Black" FontSize="Micro">
+                <Label.Text>
+Nonograms are a type of logic puzzle with simple rules but tricky answers, much like Sudoku or Minesweeper.
+                    
+The rules are as follows; there is a grid of squares which are either black or white. The only way to tell their colour is the list of numbers above and next to the grid.
+Above each column there are a series of numbers that list the number of black boxes *in a row* there are in that vertical column. 
+Beside each row there are a series of numbers that list the number of black boxes *in a row* there are in that horizontal row.
+If there are multiple numbers that means there are multiple lengths of black squares, each with at least one white space in between them.
+The order of the numbers determines the order of the lengths of black squares.    
+                    
+In order to solve the puzzle every black square must be marked black by tapping its box and then checking if you're correct with the "CHECK" button.
+Tapping a square twice turns it red and tapping it once more makes it white again. Red squares act the same as white squares and are only there to help you remember squares you've deemed as not black. Filling in non-black squares red is not required to solve the puzzle.
+                </Label.Text>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

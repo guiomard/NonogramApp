@@ -56,11 +56,6 @@ namespace App1
                 checkButton.BackgroundColor = Color.Green;
                 checkButton.FontSize = 15;
             }
-
-
-            //homeButton.BackgroundColor = Color.Red;
-            //ver1.Text = rep.getPuzzleHeader(0, 0, 0);
-
         }
 
         private void setGrid(int i)
@@ -127,8 +122,6 @@ namespace App1
                     currentMap[thisRow, thisCol] = 0;
                     break;
             }
-
-            homeButton.Text = (thisRow).ToString() + " " + (thisCol).ToString() + " " + currentMapColor[thisRow, thisCol] + " " + currentMap[thisRow, thisCol];
         }
     }
 }
